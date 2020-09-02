@@ -1,0 +1,14 @@
+{
+  "name": "laba1",
+  "version": "1.0.0",
+  "description": "ПММП. Лабораторная работа №1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Polina Shenets",
+  "license": "ISC",
+  "dependencies": {
+    "opencv.js": "^1.2.1"
+  }
+}
