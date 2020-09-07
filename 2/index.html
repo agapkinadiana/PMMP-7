@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://huningxin.github.io/opencv.js/build/asm.js/opencv.js"></script>
+    <script src="script.js" async onload="opencvIsReady()"></script>
+</head>
+
+<body>
+    <p id='status'>OpenCV.js is loading...</p>
+    <br/>
+    <h1>Задание 1</h1>
+    <input type='file' id='fileInput' accept='image/gif, image/jpeg, image/png' />
+    <div>
+        <h3>Original image</h3>
+        <img id='srcImage' height="300px"></img>
+    </div>
+    <div>
+        <h3>Свертка</h3>
+        <canvas id='convolution'></canvas>
+    </div>
+    
+
+    <br/>
+    <h1>Задание 2</h1>
+    <input type='file' id='fileInput1' accept='image/gif, image/jpeg, image/png' />
+    <div>
+        <h3>Original image</h3>
+        <img id='srcImage1' height="300px"></img>
+    </div>
+    <div>
+        <h3>Blur</h3>
+        <canvas id='blur'></canvas>
+    </div>
+    <div>
+        <h3>Box filter</h3>
+        <canvas id='boxFilter'></canvas>
+    </div>
+    <div>
+        <h3>Gaussian Blur</h3>
+        <canvas id='gaussianBlur'></canvas>
+    </div>
+    <div>
+        <h3>Median Blur</h3>
+        <canvas id='medianBlur'></canvas>
+    </div>
+
+
+
+
+    <br/>
+    <h1>Задание 3</h1>
+    <input type='file' id='fileInput2' accept='image/gif, image/jpeg, image/png' />
+    <div>
+        <h3>Original image</h3>
+        <img id='srcImage2' height="300px"></img>
+    </div>
+    <div>
+        <h3>Эрозия</h3>
+        <canvas id='erosion'></canvas>
+    </div>
+    <div>
+        <h3>Дилатация</h3>
+        <canvas id='dilation'></canvas>
+    </div>
+
+
+    <br/>
+    <h1>Задание 4</h1>
+    <input type='file' id='fileInput3' accept='image/gif, image/jpeg, image/png' />
+    <div>
+        <h3>Original image</h3>
+        <img id='srcImage3' height="300px"></img>
+    </div>
+    <div>
+        <h3>Поиск границ</h3>
+        <canvas id='canny'></canvas>
+    </div>
+
+
+    <br/>
+    <h1>Задание 5</h1>
+    <input type='file' id='fileInput4' accept='image/gif, image/jpeg, image/png' />
+    <div>
+        <h3>Original image</h3>
+        <img id='srcImage4' height="300px"></img>
+    </div>
+    <div>
+        <h3>Выравнивание гистограммы</h3>
+        <canvas id='hist'></canvas>
+    </div>
+
+</body>
+
+</html>
