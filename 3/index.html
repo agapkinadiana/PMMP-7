@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>A picture with the camera on JavaScript</title>
+  <link href="index.css" type="text/css" rel="stylesheet" />
+  <script type="text/javascript" src="index.js" ></script>
+</head>
+<body >
+  <center>
+    <table cellpadding="0" cellspacing="0">
+      <thead>
+        <th>Video from camera:</th>
+        <th></th>
+        <th>Picture preview:</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="box video">
+            <video autoplay id="video"></video>
+          </td>
+          <td class="separator"></td>
+          <td class="box preview">
+            <canvas id="canvas"></canvas>
+          </td>
+        </tr>
+        <tr>
+          <td><input id="take_button" type="button" value="Start" onclick="onStart()"/></td>
+          <td class="separator"></td>
+          <td>
+            <tr><input id="sobel_button" type="button" value="Sobel" onclick="onSobel()"/></tr>
+            <tr><input id="canny_button" type="button" value="Canny" onclick="onCanny()"/></tr>
+            <tr><input id="laplac_button" type="button" value="Laplac" onclick="onLaplac()"/></tr>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div id="message"></div>
+    <div class="copyright"><a href="http://as3coder.blogspot.com">as3coder.blogspot.com</a></div>
+  </center>
+  <script src="https://huningxin.github.io/opencv.js/build/asm.js/opencv.js"></script>
+  <script id="lzutf8" src="https://cdn.jsdelivr.net/npm/lzutf8/build/production/lzutf8.js"></script>
+</body>
+</html>
