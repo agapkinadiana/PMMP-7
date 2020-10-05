@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>OpenCV JS Binding - Image Processing Demo</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+        <img id='srcImage' src="Harris_Detector_Original_Image.jpg" height="350px"></img>
+        <canvas id='canvasOutput1'></canvas>
+        <canvas id='canvasOutput2'></canvas>
+	    <br>
+        <button onclick="harrisCornerDetection()">Harris</button>
+        <button onclick="shiThomasCornerDetection()">Shi Tomas</button>
+        <br>
+        <img id='srcImage2' img src="photo.jpeg">
+        <canvas id="tranform1"></canvas>
+        <canvas id="tranform2"></canvas>
+        <br>
+        <button onclick="AffineTransform()">Affine Transform</button>
+        <button onclick="PerspectiveTransform()">Perspective Transform</button>
+        <script src="https://huningxin.github.io/opencv.js/build/asm.js/opencv.js"></script>
+        <script src="/5/script.js"></script>
+	</body>
+</html>
